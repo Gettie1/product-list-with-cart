@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Red+Hat+Text">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;600;700&display=swap">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Poduct list with cart</title>
+  </head>
+  <body>
+    <div id="container">
+    <h3> Desserts</h3>
+    <div id="product-list"></div>
+    </div>  
+<aside class="cart">
+  <h2 style="color:hsl(14, 86%, 42%) ; font-size: large;">Your Cart (<span id="cart-count">0</span>)</h2>
+  <ul id="cart-items"></ul> 
+  <div class="total">
+    <p style="position: 10px; margin: 10px;"><span style="color: black;">Order Total</span>: <strong id="cart-total"><b>$0.00</b></strong></p> 
+     <div class="eco">
+      <img src="assets/images/icon-carbon-neutral.svg" alt="">
+      <p>This is a <strong>carbon-neutral</strong> delivery</p>
+     </div>
+    <button id="confirm">Confirm Order</button>
+  </div>
+</aside>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
